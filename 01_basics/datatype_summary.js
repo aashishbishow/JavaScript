@@ -90,3 +90,48 @@ console.log(typeof myObj);
 // Jati pani non-primitive type hunxa tesko actually datatype or return type function nei aauxa javascript ma, function return type chei  object function vaninxa
 
 // Reference link https:262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+
+/******************************************/
+
+// Stack and Heap: Memory
+// Stack: Primitive Type
+// Heap: Non Primitive Type
+
+// Jaba jaba stack memory use hunxa jati pani variable declare hunxa hamile tesko eauta copy pauxau
+// jati pani heap ma datatype store hunxa tya bata hamile original value ko reference pauxau
+
+// Example
+
+let myYouTubeName = "aashisbishow.com";
+// Jati bela variable declare vayo tyo(myYouTubeName) gayo stack ma
+
+let anotherName = myYouTubeName;
+anotherName = "chaiaurcode"; // value copy variable yani anothername ma change hunxa naki original myYouTubeName ma
+
+console.log(myYouTubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+/* {
+    email: "user@google.com",
+    upi: "user@ybl"
+} => yeti part gayo heap ani userOne gayo stack ma tyo heap ma vako value ko reference payo userOne le
+
+*/
+
+let userTwo = userOne;
+/*
+ usertwo ta declared vayera stack ma janxa but value chei userOne ko value ko reference bata nei aauxa
+*/
+
+userTwo.email = "aashish@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
