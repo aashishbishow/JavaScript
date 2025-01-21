@@ -11,7 +11,7 @@ console.log(`Hello my name is ${name} and my repo count is ${repoCount}`); // =>
 
 // Declaring string another way
 
-const gameName = new String("aashish-bishow-com"); // we use object of javascript using new keyword
+const gameName = new String("aashish-bishow"); // we use object of javascript using new keyword
 // hitesh-hc
 
 console.log(gameName[0]);
