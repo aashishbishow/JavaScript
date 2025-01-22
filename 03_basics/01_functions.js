@@ -76,4 +76,50 @@ function loginUserMessage(username = "Sam"){
 // console.log(user);
 
 
-console.log(loginUserMessage("aashish")); // undefined aauxa, kinaki defined gareko xaina
+// console.log(loginUserMessage("aashish")); // undefined aauxa, kinaki defined gareko xaina
+
+
+// In context of sopping cart jaha kati parameter aauxa thaha hunna but price add garnu parxa 
+
+// ... yo 3ta dot lai nei rest operator vaninxa ani yo ... 3ta dot lai dpread operator vanxina dependa upon use case
+
+// function vitra multiple params pass hunxa
+
+function calculateCartPrice(val1, val2, ...num1){ // as an array return garxa rest operator le, matlap jati pani arguments aai raxa tyo khulla bikreta ho yani hamile la khulla ma mili raxa using rest yelai bundle gardei jun hunxa rest ma
+    return num1;
+}
+
+console.log(calculateCartPrice(200, 300, 500, 600, 700));// yesko first value val1 ma gayo, second value gayo val2 ma  ani baki jati pani xa tyo gayo rest ma
+
+// yo cart wala problem solve garna lai hami sanga rest operator hunxa
+
+
+const user = {
+    username: "aashishbishow",
+    price: 199
+}
+// how to pass object in function and use
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`); // type cheacking must be done
+}
+
+// handleObject(user);
+
+// direct objetc banayaera defined function ma pass garna ni milxa
+
+handleObject({
+    username: "Sam",
+    price: 399
+});
+
+// yesma hamile array ni pass garna milxa
+const myNewArray = [200, 400, 100, 600];
+
+function handleArray(anyArray){
+    return anyArray[1];
+}
+console.log(handleArray(myNewArray));
+
+
+console.log(handleArray([400, 600, 500]));
