@@ -17,6 +17,9 @@ if (true){ // if vitra jati pani xa teslai vaninxa block scope, if bahira jati p
     const b = 20;
     // c = 30; // by default var declared hunxa
     console.log("Inner a: ", a);
+    function num(params) {
+        // local scope function, can't be accessed in global scope
+    }
     
 }
 
