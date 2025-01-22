@@ -58,11 +58,56 @@ const users = [
 // loop thorugh garda ya value print garda
 // .map layera loop garna milxa
 users[1].email;
-console.log((tinderUser));
+// console.log((tinderUser));
 
-console.log(Object.keys(tinderUser)); // return data type array aauxa, abba yesma hamile loop lagauna milxa
+// console.log(Object.keys(tinderUser)); // return data type array aauxa, abba yesma hamile loop lagauna milxa
 
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged')); // property check
+// console.log(tinderUser.hasOwnProperty('isLogged')); // property check
+
+// Destructing: Array ko ni hunxa, object ko ni hunxa
+
+
+const course = {
+    coursename: "js in codespace",
+    price: "999",
+    courseInstructor: "me"
+}
+
+
+// code clean banauna
+// course.courseInstructor
+
+
+const {courseInstructor: instructor} = course // yeslai nei object destructing vanixa
+console.log(instructor);
+
+
+const navbar = ({company}) => {
+
+}
+
+navbar(company = "aashish")
+
+
+// apna kaam aru tauko ma halnu lai api vanixa
+// api: iske topi uske saar
+
+// pahila ko time api values aauthiyo xml ma aile aauxa json ma
+
+// JSON yesko dekhinxa, object nei ho bass naam hunna
+// {
+//     "name": "aashish", // yesma name ko key hunxa ani value ni hunxa which is name
+//     "coursename": "js in codespace",
+//     "price": "free"
+// }
+
+// kaile kai api value array for ma aauxa
+// [
+//     {},
+//     {},
+//     {}
+// ]
+
